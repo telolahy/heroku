@@ -11,9 +11,9 @@ def hello():
 
 @app.route('/api/v1/products')
 def products():
-    PRODUCTS = {
+    products = {
     1: { 'id': 1, 'name': 'Skello' },
     2: { 'id': 2, 'name': 'Socialive.tv' },
 }
-    return jsonify(PRODUCTS)
+    return jsonify({"products":products})
     
